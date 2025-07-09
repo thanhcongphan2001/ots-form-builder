@@ -4,8 +4,6 @@
 	"private": true,
 	"type": "module",
 	"dependencies": {
-		"@coltorapps/builder": "^0.2.3",
-		"@coltorapps/builder-react": "^0.2.3",
 		"@emotion/cache": "11.13.5",
 		"@emotion/react": "11.13.5",
 		"@emotion/styled": "11.13.5",
