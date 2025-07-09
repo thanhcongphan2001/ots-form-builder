@@ -1,9 +1,18 @@
-import { useSession, signOut } from 'next-auth/react';
+// import { useSession, signOut } from 'next-auth/react';
 import { useMemo } from 'react';
 import { User } from '@auth/user';
 import { authUpdateDbUser } from '@auth/authApi';
 import _ from 'lodash';
 import setIn from '@/utils/setIn';
+
+// Mock signOut function
+const signOut = () => Promise.resolve();
+
+// Mock useSession hook
+const useSession = () => ({
+	data: null,
+	update: () => Promise.resolve()
+});
 
 type useUser = {
 	data: User | null;

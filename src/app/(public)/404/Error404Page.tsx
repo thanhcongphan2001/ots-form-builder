@@ -2,7 +2,8 @@ import Typography from '@mui/material/Typography';
 import { motion } from 'motion/react';
 import Link from '@fuse/core/Link';
 import Box from '@mui/material/Box';
-import { useSession } from 'next-auth/react';
+// import { useSession } from 'next-auth/react';
+const useSession = () => ({ status: 'unauthenticated' });
 
 /**
  * The Error404Page component renders a custom 404 error page.

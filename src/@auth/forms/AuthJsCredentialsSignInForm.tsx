@@ -9,7 +9,8 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Link from '@fuse/core/Link';
 import Button from '@mui/material/Button';
-import { signIn } from 'next-auth/react';
+// import { signIn } from 'next-auth/react';
+const signIn = () => Promise.resolve();
 import { Alert } from '@mui/material';
 import signinErrors from './signinErrors';
 

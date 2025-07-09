@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import 'src/styles/splash-screen.css';
 import 'src/styles/index.css';
-import { SessionProvider } from 'next-auth/react';
-import { auth } from '@auth/authJs';
+// import { SessionProvider } from 'next-auth/react';
+// import { auth } from '@auth/authJs';
 import generateMetadata from '../utils/generateMetadata';
 import App from './App';
 
@@ -21,7 +21,7 @@ export default async function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	const session = await auth();
+	// const session = await auth();
 
 	return (
 		<html lang="en">
@@ -71,12 +71,12 @@ export default async function RootLayout({
 				id="root"
 				className={clsx('loading')}
 			>
-				<SessionProvider
+				{/* <SessionProvider
 					basePath="/auth"
 					session={session}
-				>
-					<App>{children}</App>
-				</SessionProvider>
+				> */}
+				<App>{children}</App>
+				{/* </SessionProvider> */}
 			</body>
 		</html>
 	);
